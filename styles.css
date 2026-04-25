@@ -339,6 +339,31 @@ h2 {
   font-size: 1.05rem;
 }
 
+.timeline-head h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.company-logo {
+  height: 30px;
+  width: auto;
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: #ffffff;
+  padding: 0.28rem 0.42rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28),
+    0 0 0 2px rgba(255, 255, 255, 0.06);
+}
+
+.company-logo--delhivery {
+  height: 31px;
+}
+
+.company-logo--blusmart {
+  height: 29px;
+}
+
 .timeline-head span {
   color: var(--muted);
   font-size: 0.88rem;
