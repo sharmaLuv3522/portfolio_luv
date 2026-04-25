@@ -9,7 +9,12 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.16 }
+  {
+    // Lower threshold so very tall sections (like Experience on mobile)
+    // still become visible when user scrolls into them.
+    threshold: 0.05,
+    rootMargin: "0px 0px -8% 0px",
+  }
 );
 
 sections.forEach((section) => observer.observe(section));
